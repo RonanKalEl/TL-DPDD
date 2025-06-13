@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h1>Welcome to the Javascript Machine</h1>
+        <p id="greeting"></p>
+        <input id="nameInput" type="text" placeholder="Enter your name">
+        <button onclick="sayHello()">Submit</button>
+        <p id="output"></p>
+        <script>
+            let question = prompt("Enter 1 or 2")
+            if (question == "1") {
+                document.getElementById("greeting").innerText = "Hey Bob";
+            } else {
+                document.getElementById("greeting").innerText = "Hey Tim";
+            }
+
+            function sayHello() {
+                let name = document.getElementById("nameInput").value;
+                document.getElementById("output").innerText = "Hello " + name;
+            }
+        </script>
+    </body>
+</html>
