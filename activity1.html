@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h1>Welcome to the Javascript Calculation Machine</h1>
+        <script>
+            let number1 = prompt("Insert First Value")
+            let number2 = prompt("Insert Second Value")
+
+            let addition = parseFloat(number1 + number2)
+            let subtract = parseFloat(number1 - number2)
+            let multiply = parseFloat(number1 * number2)
+            let divide = parseFloat(number1 / number2)
+
+            console.log(addition, subtract, multiply, divide)
+
+            let sum = addition + subtract + multiply + divide
+
+            console.log(sum)
+
+            if (sum >= 100) {
+                console.log("BIG NUMBERR!!!")
+            }
+            let i = 1
+            while (i < 11) {
+                console.log(i);
+                i++;
+            }
+        </script>
+    </body>
+</html>
